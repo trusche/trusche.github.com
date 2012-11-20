@@ -1,132 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Thilo Rusche</title>
-  <meta name="author" content="Thilo Rusche">
-
-  
-  <meta name="description" content="Tweet Reload Your Factories With Spork Nov 20th, 2012 Spork is a great tool that can really cut down
-on the startup time of your tests. This gets &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://trusche.github.com/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Thilo Rusche" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body >
-  <header role="banner" id="sidebar">
-    <!-- Logo -->
-<aside id="logo" class="clearfix">
-  <div class="clearfix">
-    <a href="/">Thilo Rusche</a>
-  </div>
-</aside>
-
-<ul id="menu">
-
-  <li class="title">
-    <h1 id="title"><a href="/">Thilo Rusche</a></h1>
-  </li>
-
-
-  <li class="link">
-    <a href="/about/">about</a>
-  </li>
-
-  <li class="link">
-    <a href="http://twitter.com/trusche/">twitter</a>
-  </li>
-
-
-  <li class="link">
-    <a href="http://github.com/trusche/">github</a>
-  </li>
-
-  <li class="link rss">
-    <a href="/atom.xml">rss feed</a>
-  </li>
-</ul>
-
-
-
-<!-- Octopress Love -->
-<aside id="octopress_linkback">
-  <a href="http://octopress.org/">
-    <span class="unicode_square">
-      <span class="unicode_circle">
-        &nbsp;
-      </span>
-    </span>
-    <span class="octopress">Powered by Octopress</span>
-  </a>
-</aside>
-
-  </header>
-  <section id="main">
-      
-  
-  
-    <article class="post">
-      <div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://trusche.github.com/index.html" data-via="trusche" data-counturl="http://trusche.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-      
-  <header>
+  <title><![CDATA[Thilo Rusche]]></title>
+  <link href="http://trusche.github.com/atom.xml" rel="self"/>
+  <link href="http://trusche.github.com/"/>
+  <updated>2012-11-20T12:58:10+00:00</updated>
+  <id>http://trusche.github.com/</id>
+  <author>
+    <name><![CDATA[Thilo Rusche]]></name>
     
-      <h2 class="entry-title">
-        
-        <a href="/blog/2012/11/20/reload-your-factories-with-guard/">Reload Your Factories With Spork</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2012-11-20T19:13:00+00:00" pubdate data-updated="true">Nov 20<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p><a href="https://github.com/sporkrb/spork">Spork</a> is a great tool that can really cut down
+  <entry>
+    <title type="html"><![CDATA[Reload your factories with spork]]></title>
+    <link href="http://trusche.github.com/blog/2012/11/20/reload-your-factories-with-guard/"/>
+    <updated>2012-11-20T19:13:00+00:00</updated>
+    <id>http://trusche.github.com/blog/2012/11/20/reload-your-factories-with-guard</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/sporkrb/spork">Spork</a> is a great tool that can really cut down
 on the startup time of your tests. This gets more noticable as your code base grows in size.
 Our current test suite at legitscript takes quite a few seconds to start up,
 which would be a big impediment to test-driven development without spork.</p>
@@ -185,54 +77,15 @@ each tweak to a factory would require restarting spork.</p>
 
 
 <p>Voila! Tweak a factory and keep coding while your tests re-run in the background.</p>
-
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article class="post">
-      <div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://trusche.github.com/index.html" data-via="trusche" data-counturl="http://trusche.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2011/09/29/logging-outgoing-http-requests/">Logging Outbound HTTP Requests</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-09-29T19:13:00+01:00" pubdate data-updated="true">Sep 29<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p>Rails logs a ton of details about incoming HTTP requests in debug mode.
+  <entry>
+    <title type="html"><![CDATA[Logging outbound HTTP requests]]></title>
+    <link href="http://trusche.github.com/blog/2011/09/29/logging-outgoing-http-requests/"/>
+    <updated>2011-09-29T19:13:00+01:00</updated>
+    <id>http://trusche.github.com/blog/2011/09/29/logging-outgoing-http-requests</id>
+    <content type="html"><![CDATA[<p>Rails logs a ton of details about incoming HTTP requests in debug mode.
 But what about outbound requests?
 Few gems implementing third party APIs bother to log their requests and responses,
 and hacking their source code is suboptimal.
@@ -329,40 +182,7 @@ Here’s some (truncated) sample output from a request made by the
 It’s been working fine for me with ruby 1.9.2 and 1.9.3,
 but I have not taking extra pains to test it against older versions.
 If you run into trouble, feel free to open an issue on <a href="https://github.com/trusche/httplog/issues">github</a>.</p>
-
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-
-    <nav role="navigation" id="pagination">
-
-</nav>
-  </section>
-  
-
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-</body>
-</html>
+</feed>

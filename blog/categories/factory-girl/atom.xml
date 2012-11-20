@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: factory-girl | Thilo Rusche]]></title>
+  <link href="http://trusche.github.com/blog/categories/factory-girl/atom.xml" rel="self"/>
+  <link href="http://trusche.github.com/"/>
+  <updated>2012-11-20T12:58:10+00:00</updated>
+  <id>http://trusche.github.com/</id>
+  <author>
+    <name><![CDATA[Thilo Rusche]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Reload your factories with spork]]></title>
+    <link href="http://trusche.github.com/blog/2012/11/20/reload-your-factories-with-guard/"/>
+    <updated>2012-11-20T19:13:00+00:00</updated>
+    <id>http://trusche.github.com/blog/2012/11/20/reload-your-factories-with-guard</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/sporkrb/spork">Spork</a> is a great tool that can really cut down
+on the startup time of your tests. This gets more noticable as your code base grows in size.
+Our current test suite at legitscript takes quite a few seconds to start up,
+which would be a big impediment to test-driven development without spork.</p>
+
+<p>If spork is used together with <a href="https://github.com/thoughtbot/factory_girl">factory_girl</a>, \
+it helps to load the factories on each test run.
+If they're loaded in the pre-fork block,
+each tweak to a factory would require restarting spork.</p>
+
+<p>The naive approach would be to reload those files just like your models and controllers:</p>
+
+<p><code>ruby
+Spork.each_run do
+  # ...
+  Dir["#{Rails.root}/spec/support/*.rb"].each {|f| load f}
+end
+</code></p>
+
+<p>However, this attempts to redefine existing factories, which will fail with an error:</p>
+
+<p><code>plain
+Factory already registered: website
+  (FactoryGirl::DuplicateDefinitionError)
+</code></p>
+
+<p>On top of that, if you have any sequences defined, you would get an error similar to this one:</p>
+
+<p><code>
+Exception encountered:
+  #&lt;FactoryGirl::DuplicateDefinitionError:
+  Sequence already registered: email&gt;
+</code></p>
+
+<p>The solution is to explicitly clear out any existing factories and sequences:</p>
+
+<p><code>ruby
+Spork.each_run do
+  # ...
+  FactoryGirl.sequences.clear
+  FactoryGirl.factories.clear
+  Dir["#{Rails.root}/spec/support/*.rb"].each {|f| load f}
+end
+</code></p>
+
+<p>Voila! Tweak a factory and keep coding while your tests re-run in the background.</p>
+]]></content>
+  </entry>
+  
+</feed>

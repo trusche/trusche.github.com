@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://trusche.github.com/blog/2011/09/29/logging-outgoing-http-requests/</loc>
+        <lastmod>2012-11-20T12:54:31+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://trusche.github.com/blog/2012/11/20/reload-your-factories-with-guard/</loc>
+        <lastmod>2012-11-20T12:17:34+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://trusche.github.com/about/</loc>
+        <lastmod>2012-11-20T12:46:02+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://trusche.github.com/blog/archives/</loc>
+        <lastmod>2012-11-20T12:54:31+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://trusche.github.com/</loc>
+        <lastmod>2012-11-20T12:54:31+00:00</lastmod>
+    </url>
+</urlset>
